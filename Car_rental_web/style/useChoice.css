@@ -1,0 +1,94 @@
+.useChoicePg {
+    display: none;
+    background-color: rgba(63, 142, 252, 0.85);
+    height: 100vh;
+}
+
+.ecoRental_header {
+    display: flex;
+    background-color: #fff;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    min-width: 100%;
+}
+
+.useChoice {
+    background-color: rgba(63, 142, 252, 0.85);
+    height: 100vh;
+}
+
+.useChoice_content {
+    position: relative;
+    top: 30px;
+    width: 600px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.useChoiceTitle {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.useChoiceTitle span {
+    border-bottom: 3px solid black;
+    padding: 5px;
+}
+
+.daily,
+.trip {
+    text-align: center;
+}
+
+.trip {
+    margin-top: 90px;
+}
+
+.dailyBtn {
+    background: url('/img/하늘.jpg');
+}
+
+.tripBtn {
+    background: url('/img/여행.jpg');
+}
+
+.dailyBtn,
+.tripBtn {
+    display: inline-block;
+
+    width: 350px;
+    padding: 50px;
+
+    position: relative;
+    text-align: center;
+    top: 15vh;
+
+    margin: 0 auto;
+
+    border: 3px solid black;
+    border-radius: 8px;
+
+    background-position: 38%;
+    opacity: 1;
+
+    text-decoration: none;
+}
+
+.dailyText,
+.tripText {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+
+    width: 100%;
+    height: 100%;
+}

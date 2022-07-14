@@ -1,0 +1,24 @@
+.roadMap {
+    display: none;
+}
+
+.findRoad {
+    background-image: url('/img/지도.png');
+    background-size: cover;
+    background-position: 10%;
+    height: 50vh;
+    max-width: 100vh;
+    border: 5px solid black;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+}
+
+.comeExplain {
+    position: relative;
+    text-align: center;
+    top: 50px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/mainPg.css">
+    <link rel="stylesheet" href="./style/useChoice.css">
+    <link rel="stylesheet" href="./style/detail_info.css">
+    <link rel="stylesheet" href="./style/findRoad.css">
+    <link rel="stylesheet" href="./style/carInfo.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="ecoRental_header">
+            <a onclick="window.location.reload()" class="logo" href="#">eco rental</a>
+        </header>
+
+        <!-- 메인 페이지 -->
+        <div class="mainPg">
+            <div class="mainContent">
+
+                <div class="mainTitle">
+                    <div class="mainLogo">eco rental</div>
+                    <p class="welcomeText">전기차 렌탈 서비스에 오신 것을 환영합니다 !</p>
+                    <form class="start_btns">
+                        <input onclick="Do_Reservation()" class="reservation_car" type="button" value="예약 하기">
+                        <input onclick="followRoadMap()" class="roadGuide" type="button" value="오시는 길">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 사용 목적 -->
+        <div class="useChoicePg">
+            <div class="useChoice_content">
+                <div class="useChoiceTitle">
+                    <span>전기 자동차의 사용 목적은?</span>
+                </div>
+                <div class="daily">
+                    <a href="#" onclick="tripClick()" class="dailyBtn">
+                        <h1 class="dailyText">
+                            일상
+                        </h1>
+                    </a>
+                </div>
+
+                <div class="trip">
+                    <a href="#" onclick="dailyClick()" class="tripBtn">
+                        <h1 class="tripText">
+                            여행
+                        </h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 상세 정보 -->
+        <div class="detailInfo">
+            <div class="Info_content">
+                <div class="infoTitle">
+                    <span>상세 정보</span>
+                </div>
+                <form class="InfoForm">
+                    <div class="subForm_use">
+                        <h2>사용 용도</h2>
+                        <div class="use_div" id="using">
+                            <li class="item" id="un_package" onclick="onClickItemUsing(this, 'using')"><a href="#">비포장
+                                    도로</a>
+                            </li>
+                            <li class="item" id="package" onclick="onClickItemUsing(this, 'using')"><a href="#">포장
+                                    도로</a>
+                            </li>
+                            <li class="item" id="cargo" onclick="onClickItemUsing(this, 'using')"><a href="#">화물용</a>
+                            </li>
+                        </div>
+                    </div>
+
+                    <div class="subForm_size">
+                        <h2>자동차 크기</h2>
+                        <div class="use_div" id="sizing">
+                            <li class="item" id="small" onclick="onClickItemSizing(this, 'sizing')"><a href="#">소형</a>
+                            </li>
+                            <li class="item" id="midium" onclick="onClickItemSizing(this, 'sizing')"><a href="#">중형</a>
+                            </li>
+                            <li class="item" id="large" onclick="onClickItemSizing(this, 'sizing')"><a href="#">대형</a>
+                            </li>
+                        </div>
+                    </div>
+
+
+                    <div class="subForm_personnel">
+                        <h2>탑승 인원</h2>
+                        <div class="use_div" id="grouping">
+                            <li class="item" id="large" onclick="onClickItemGrouping(this, 'grouping')"><a
+                                    href="#">1~2인</a></li>
+                            <li class="item" id="large" onclick="onClickItemGrouping(this, 'grouping')"><a href="#">4인
+                                    이상</a></li>
+                            <li class="item" id="large" onclick="onClickItemGrouping(this, 'grouping')"><a href="#">6인
+                                    이상</a></li>
+                        </div>
+                    </div>
+                    <div class="commendBtnArea">
+                        <input onclick="commendClick()" class="commendBtn" type="button" value="전기 자동차 추천 받기">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- 지도 찾아오는 길 -->
+        <div class="roadMap">
+            <div class="findRoad">
+            </div>
+            <p class="comeExplain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab veritatis <br>debitis
+                deserunt voluptatum aperiam, officia exercitationem possimus itaque iure?</p>
+        </div>
+
+        <!-- 자동차 정보 -->
+        <div class="carInfoArea">
+            <div class="car_content">
+                <div class="img_area">
+                    <div class="car_img">
+                    </div>
+                    <h2 class="carKind">GENESIS GV60</h2>
+                </div>
+                <div class="carInfoArea">
+                    <div class="carInfo">
+                        <h1 class="infoTitle">차량 정보</h1>
+                        <div class="Info">
+                            <p><span>차 종류: </span> GENESIS GV60</p>
+                            <hr><br>
+                            <p><span>자동차 사이즈: </span>중형</p>
+                            <hr><br>
+                            <p><span>탑승 인원: </span>4인 이상 가능</p>
+                            <hr>
+                        </div>
+
+                    </div>
+                    <div class="submitButtons">
+                        <div class="car_price">
+                            가격: 1,000,000원
+                        </div>
+                        <div>
+                            <form>
+                                <input type="button" onclick="resultClick()" class="resevationBtn" value="예약하기">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./app/app.js"></script>
+</body>
+
+</html>

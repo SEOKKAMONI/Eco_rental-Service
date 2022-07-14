@@ -1,0 +1,105 @@
+.car_content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+}
+
+.car_img {
+    box-sizing: border-box;
+    background-image: url('/img/제네시스\ 전기.jpg');
+    width: 500px;
+    height: 340px;
+    border: 5px solid black;
+    border-radius: 16px;
+}
+
+.carInfo {
+    width: 400px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.car_content {
+    display: flex;
+}
+
+.car_content .img_area {
+    margin-right: 30px;
+}
+.car_content .carInfo {
+    margin-left: 30px;
+}
+
+.submitButtons {
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+.img_area h2 {
+    text-align: center;
+}
+
+.resevationBtn {
+    box-sizing: border-box;
+    border: none;
+    background-color: #fff;
+    width: 200px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+}
+
+.car_price {
+    box-sizing: content-box;
+    width: 250px;
+    background-color: #fff;
+    color: black;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.submitButtons {
+    display: flex;
+}
+
+.submitButtons div {
+    margin: 20px;
+}
+
+.infoTitle {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    padding: 5px;
+    border-bottom: 2.5px solid black;
+}
+
+.Info {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    text-align: left;
+    padding: 32px;
+}
+
+.Info p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carKind {
+    color: #fff;
+    font-size: 32px;
+}

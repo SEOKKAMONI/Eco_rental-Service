@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+
+/* body {
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.container {
+    background-color: rgba(63, 142, 252, 0.85);
+    height: 100vh;
+    overflow-y: hidden;
+} 
+
+.mainContent {
+    height: 100vh;
+}
+
+.mainLogo {
+    text-align: center;
+    color: #fff;
+    font-size: 160px;
+    font-weight: bold;
+}
+
+.mainTitle {
+    position: relative;
+    top: 10vh;
+    text-align: center;
+}
+
+.welcomeText {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.start_btns {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    top: 60px;
+}
+
+.reservation_car,
+.roadGuide {
+    cursor: pointer;
+
+    margin: 0 auto;
+    width: 300px;
+    height: 60px;
+    margin-top: 20px;
+    border: none;
+    background-color: #03045e;
+    
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 16px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
