@@ -2,7 +2,7 @@ const mainPg = document.querySelector(".mainPg"); // 메인 페이지
 const useChoicePg = document.querySelector(".useChoicePg"); // 사용목적 페이지
 const roadMap = document.querySelector(".roadMap"); // 지도맵
 const detailInfo = document.querySelector(".detailInfo"); // 상세 설문지
-const carInfoArea = document.querySelector(".carInfoArea");
+const carInfoArea = document.querySelector(".car_InfoArea");
 
 
 function Do_Reservation() {
